@@ -30,7 +30,7 @@
   "styles": [
     "styles/magecraft.css"
   ],
-  "url": "https://github.com/yourusername/magecraft-ability",
-  "manifest": "https://raw.githubusercontent.com/yourusername/magecraft-ability/main/module.json",
-  "download": "https://github.com/yourusername/magecraft-ability/archive/v1.0.0.zip"
+  "url": "https://github.com/Gaji-Mahmamud/MagecraftModule",
+  "manifest": "https://raw.githubusercontent.com/Gaji-Mahmamud/MagecraftModule/main/module.json",
+  "download": "https://github.com/Gaji-Mahmamud/MagecraftModule/archive/refs/heads/main.zip"
 }
