@@ -1,0 +1,36 @@
+{
+  "id": "magecraft-ability",
+  "title": "Magecraft Ability Score",
+  "description": "Adds a custom Magecraft ability score to the DnD 5e system.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "Your Name",
+      "discord": "Your Discord"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "3.0.0"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/magecraft.js"
+  ],
+  "styles": [
+    "styles/magecraft.css"
+  ],
+  "url": "https://github.com/yourusername/magecraft-ability",
+  "manifest": "https://raw.githubusercontent.com/yourusername/magecraft-ability/main/module.json",
+  "download": "https://github.com/yourusername/magecraft-ability/archive/v1.0.0.zip"
+}
