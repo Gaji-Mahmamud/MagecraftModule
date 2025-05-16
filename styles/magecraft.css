@@ -1,0 +1,72 @@
+/* Styles for Magecraft Ability Score */
+
+/* Customize the appearance of the Magecraft ability score */
+.dnd5e.sheet .ability[data-ability="mgc"] {
+  background-color: rgba(128, 0, 255, 0.1);
+  border: 1px solid rgba(128, 0, 255, 0.3);
+}
+
+/* Make the Magecraft ability name stand out */
+.dnd5e.sheet .ability[data-ability="mgc"] .ability-name label {
+  color: rgb(128, 0, 255);
+  font-weight: bold;
+}
+
+/* Add a subtle glow effect on hover */
+.dnd5e.sheet .ability[data-ability="mgc"]:hover {
+  box-shadow: 0 0 5px rgba(128, 0, 255, 0.5);
+}
+
+/* Style for Magecraft-based rolls in chat */
+.chat-message .flavor-text:contains("Magecraft") {
+  color: rgb(128, 0, 255);
+  font-style: italic;
+}
+
+/* MP display styles */
+.resource.magecraft-mp .resource-name {
+  color: rgb(128, 0, 255);
+}
+
+.resource.magecraft-mp {
+  background-color: rgba(128, 0, 255, 0.1);
+  border: 1px solid rgba(128, 0, 255, 0.3);
+}
+
+/* Style for passive Magecraft attribute */
+.attribute.magecraft-passive .attribute-name {
+  color: rgb(128, 0, 255);
+}
+
+.attribute.magecraft-passive {
+  background-color: rgba(128, 0, 255, 0.1);
+  border: 1px solid rgba(128, 0, 255, 0.3);
+}
+
+/* Style Magecraft option in dropdowns */
+select.ability-select option[value="mgc"] {
+  color: rgb(128, 0, 255);
+}
+
+/* For better integration with dark mode */
+.dark-mode .dnd5e.sheet .ability[data-ability="mgc"] {
+  background-color: rgba(170, 100, 255, 0.15);
+  border: 1px solid rgba(170, 100, 255, 0.4);
+}
+
+.dark-mode .dnd5e.sheet .ability[data-ability="mgc"] .ability-name label,
+.dark-mode .resource.magecraft-mp .resource-name,
+.dark-mode .attribute.magecraft-passive .attribute-name {
+  color: rgb(170, 100, 255);
+}
+
+/* Add animation for MP feature */
+@keyframes mp-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(128, 0, 255, 0.4); }
+  70% { box-shadow: 0 0 0 5px rgba(128, 0, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(128, 0, 255, 0); }
+}
+
+.resource.magecraft-mp:hover {
+  animation: mp-pulse 2s infinite;
+}
