@@ -1,5 +1,5 @@
 // Main module code for Magecraft ability score
-import { libWrapper } from './lib/libWrapper/shim.js';
+import { libWrapper } from '../lib/libWrapper/shim.js';
 
 /**
  * The main initialization hook that sets up all the necessary configurations
